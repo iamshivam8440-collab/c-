@@ -1,13 +1,14 @@
 #include<iostream>
 using namespace std;
-int main()
+int main() 
 {
-    int i,num;
-    cout<<"Enter a number: ";
-    cin>>num;
-    for(i=1;i<=10;i++)
-    {
-        cout<<num<<" * "<<i<<" = "<<num*i<<endl;
-    }
-    return 0;
+	int i,num;
+	cout<<"Enter the number for table:";
+	cin>>num;
+	for(i=1;i<=10;i++)
+	{
+		cout<<num*i;
+		cout<<endl;
+	}
+	return 0;
 }

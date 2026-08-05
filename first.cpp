@@ -2,6 +2,10 @@
 using namespace std;
 int main()
 {
-	cout<<"Hello World!";
+	int x;
+	cout<<"Enter the number:";
+	cin>>x;
+	cout<<x<<"\n";
+	cout<<"Hello"<<" Class";
 	return 0;
 }

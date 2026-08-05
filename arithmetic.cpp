@@ -1,44 +1,54 @@
 #include<iostream>
 using namespace std;
-int add(int ,int );
-int diff(int ,int );
-int mul(int ,int );
-int div(int ,int );
-int div(int a,int b)
+int add(int x,int y);
+int sub(int x,int y);
+int mul(int x,int y);
+int div(int x,int y);
+int add(int x,int y)
 {
-	int c=a/b;
-	return c;
+  int sum=x+y;	
+  return sum;	
 }
-int mul(int a,int b)
+int sub(int x,int y)
 {
-	int c=a*b;
-	return c;
+  int Sub=x-y;
+  return Sub;	
 }
-int diff(int a,int b)
+int mul(int x,int y)
 {
-	int c=a-b;
-	return c;
+  int muL=x*y;
+  return muL;	
 }
-int add(int a,int b)
+int div(int x,int y)
 {
-	int c=a+b;
-	return c;
+	if(y==0)
+	{
+		return -1;
+	}
+	else
+	{
+		return x/y;
+	}
 }
 int main()
-{
-	int a,b;
-	int sum,sub,Mul,Div;
-	cout<<"Enter the first number:";
-	cin>>a;
-	cout<<"Enter the second number:";
-	cin>>b;
-	sum=add(a,b);
-	sub=diff(a,b);
-	Mul=mul(a,b);
-	Div=div(a,b);
-	cout<<"Sum of "<<a<<" and "<<b<<" is:"<<sum<<endl;
-	cout<<"Sub of "<<a<<" and "<<b<<" is:"<<sub<<endl;
-	cout<<"Mul of "<<a<<" and "<<b<<" is:"<<Mul<<endl;
-	cout<<"Div of "<<a<<" and "<<b<<" is:"<<Div<<endl;
+{ 
+    int a,b;
+    int result;
+    cout<<"Enter the 1st number:";
+    cin>>a;
+    cout<<"Enter the 2nd number:";
+    cin>>b;
+    cout<<"Addition is:"<<add(a,b)<<endl;
+    cout<<"Subtraction is:"<<sub(a,b)<<endl;
+    cout<<"Multiplication is:"<<mul(a,b)<<endl;
+    result=div(a,b);
+    if(result==-1)
+    {
+    	cout<<"Division is not perform:"<<endl;
+	}
+	else
+	{
+		cout<<"Division is:"<<result;
+	}
 	return 0;
 }
