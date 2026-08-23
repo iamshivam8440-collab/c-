@@ -23,6 +23,9 @@ class sum{
 int main()
 {
 	sum s1;
+	cout<<"----------------------------\n";
+	cout<<"Find sum of two numbers\n";
+	cout<<"----------------------------\n";
 	s1.getdata();
 	int s=s1.logic();
 	cout<<s;
