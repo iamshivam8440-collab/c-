@@ -39,4 +39,3 @@ int main()
 	signal(light);
 	return 0;
 }
-
