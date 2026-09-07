@@ -4,7 +4,7 @@ int main()
 {
 	int a=10;
 	int &b=a;
-	// It's another(alias) name of a variable not a new value //
+	// It's another(alias) name of a variable not a new variable //
 	cout<<"--------Reference variable-------:"<<endl;
 	cout<<"The value of b is:"<<b<<endl;
 	cout<<"The value of a is:"<<a<<endl;
